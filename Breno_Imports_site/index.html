@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Breno Imports - moda urbana premium.">
+  <title>Breno Imports | Moda Premium</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="logo">BRENO <span>IMPORTS</span></div>
+    <button class="cart-btn" id="openCart">🛒 Carrinho <b id="cartCount">0</b></button>
+  </header>
+
+  <nav class="nav">
+    <a href="#inicio">Início</a>
+    <a href="#produtos">Produtos</a>
+    <a href="#camisas">Camisas</a>
+    <a href="#bones">Bonés</a>
+  </nav>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="hero-content">
+        <p class="eyebrow">ESTILO • QUALIDADE • ATITUDE</p>
+        <h1>Breno <span>Imports</span></h1>
+        <p>Seu estilo começa aqui.</p>
+        <a class="gold-btn" href="#produtos">VER PRODUTOS</a>
+      </div>
+    </section>
+
+    <section class="categories">
+      <h2>CATEGORIAS</h2>
+      <div class="category-grid">
+        <a href="#camisas">👕 <span>Camisas</span></a>
+        <a href="#calcas">👖 <span>Calças</span></a>
+        <a href="#moletom">🧥 <span>Moletom</span></a>
+        <a href="#chinelos">🩴 <span>Chinelos</span></a>
+        <a href="#tenis">👟 <span>Tênis</span></a>
+        <a href="#bones">🧢 <span>Bonés</span></a>
+      </div>
+    </section>
+
+    <section class="products" id="produtos">
+      <div class="section-title">
+        <p class="eyebrow">DESTAQUES</p>
+        <h2>Produtos</h2>
+      </div>
+
+      <div class="product-grid" id="camisas">
+        <article class="product-card">
+          <div class="product-image"><img src="camisa-preta.png" alt="Camisa preta Breno Imports"></div>
+          <div class="product-info">
+            <span class="tag">CAMISA</span>
+            <h3>Camisa Black Gold</h3>
+            <p class="price">R$ 89,90</p>
+            <button class="buy-btn" data-name="Camisa Black Gold" data-price="89.90">Adicionar ao carrinho</button>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <div class="product-image"><img src="camisa-branca.png" alt="Camisa branca Breno Imports"></div>
+          <div class="product-info">
+            <span class="tag">CAMISA</span>
+            <h3>Camisa White Gold</h3>
+            <p class="price">R$ 89,90</p>
+            <button class="buy-btn" data-name="Camisa White Gold" data-price="89.90">Adicionar ao carrinho</button>
+          </div>
+        </article>
+      </div>
+
+      <div class="section-title second" id="bones">
+        <p class="eyebrow">NOVIDADES</p>
+        <h2>Bonés</h2>
+      </div>
+
+      <div class="product-grid">
+        <article class="product-card">
+          <div class="product-image"><img src="bone-preto.png" alt="Boné preto Breno Imports"></div>
+          <div class="product-info">
+            <span class="tag">BONÉ</span>
+            <h3>Boné Black Signature</h3>
+            <p class="price">R$ 69,90</p>
+            <button class="buy-btn" data-name="Boné Black Signature" data-price="69.90">Adicionar ao carrinho</button>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <div class="product-image"><img src="bone-dourado.png" alt="Boné preto com logo dourada Breno Imports"></div>
+          <div class="product-info">
+            <span class="tag">BONÉ</span>
+            <h3>Boné Gold Signature</h3>
+            <p class="price">R$ 74,90</p>
+            <button class="buy-btn" data-name="Boné Gold Signature" data-price="74.90">Adicionar ao carrinho</button>
+          </div>
+        </article>
+      </div>
+
+      <div class="coming">
+        <div>
+          <p class="eyebrow">EM BREVE</p>
+          <h2>Calças • Moletons • Chinelos • Tênis</h2>
+          <p>Envie as próximas fotos e elas entram aqui nas categorias certas.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="logo">BRENO <span>IMPORTS</span></div>
+    <p>© 2026 Breno Imports. Todos os direitos reservados.</p>
+  </footer>
+
+  <aside class="cart" id="cart">
+    <div class="cart-head">
+      <h2>Seu carrinho</h2>
+      <button id="closeCart">✕</button>
+    </div>
+    <div id="cartItems" class="cart-items">
+      <p class="empty">Seu carrinho está vazio.</p>
+    </div>
+    <div class="cart-total">
+      <span>Total</span>
+      <strong id="cartTotal">R$ 0,00</strong>
+    </div>
+    <button class="gold-btn checkout" id="checkout">Finalizar pedido</button>
+  </aside>
+  <div class="overlay" id="overlay"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
